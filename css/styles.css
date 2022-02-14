@@ -284,6 +284,8 @@ img {
 
 .form-label {
   position: relative;
+  display: block;
+  margin-bottom: 10px;
 }
 .input-modal {
   width: 100%;
@@ -313,7 +315,6 @@ img {
   position: relative;
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
 }
 .input-icon {
   position: absolute;
@@ -324,13 +325,15 @@ img {
 .input-modal:focus + .input-icon {
   fill: var(--hove-text-color);
 }
+.comentary-label {
+  display: block;
+  margin-bottom: 20px;
+}
 .modal-comentary {
   display: flex;
   justify-content: center;
 }
-.commentary {
-  margin-bottom: 20px;
-}
+
 .modal-textarea {
   display: block;
   width: 448px;
@@ -355,7 +358,6 @@ img {
   color: var(--hove-text-color);
 }
 .checkbox-container {
-  margin-top: 20px;
   margin-bottom: 30px;
 }
 .modal-texteria::placeholder {
