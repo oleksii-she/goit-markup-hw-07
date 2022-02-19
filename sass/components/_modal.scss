@@ -1,0 +1,210 @@
+.backdrop {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+  
+    background-color: rgba(0, 0, 0, 0.2);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+  .modal {
+    width: 528px;
+    min-height: 581px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  
+    transform: translate(-50%, -50%) scale(0.9);
+    background-color: var(--main-cover_color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .modal__form{
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .modal__form {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(23 / 20);
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 12px;
+    color: var(--title-text-color);
+  }
+
+  .modal__label {
+    position: relative;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .modal__text {
+    display: block;
+    text-align: left;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.01em;
+    margin-bottom: 4px;
+  
+    color: var(--paragraph-text-color);
+  }
+  
+  .modal__position-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .modal__input {
+    width: 100%;
+    height: 45px;
+    padding-left: 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+
+  .modal__border:focus {
+    border: 1px solid var(--hove-text-color);
+    outline: 0;
+    cursor: pointer;
+  }
+
+  .modal__icon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-left: 12px;
+  }
+  .modal__input:focus + .input-icon {
+    fill: var(--hove-text-color);
+  }
+  /*  ФОРМА  МОДАЛКА */
+  
+ .modal__comentary {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .modal__textarea{
+    display: block;
+    width: 448px;
+    height: 120px;
+    resize: none;
+    padding: 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+  .modal__texteria::placeholder {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+  
+    color: rgba(117, 117, 117, 0.5);
+  }
+
+  
+  .checkbox__container{
+    margin-bottom: 30px;
+  }
+  
+  .checkbox__text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: var(--paragraph-text-color);
+  }
+  
+  .checkbox__link{
+    color: var(--hove-text-color);
+  }
+
+
+  .checkbox__input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  .checkbox__icon {
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--title-text-color);
+    margin-right: 7px;
+    cursor: pointer;
+  
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      drop-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .checkbox__input:checked ~ .checkbox__icon {
+    background-color: var(--hove-text-color);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+    border: none;
+  }
+  
+  .modal__close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  
+    display: flex;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+  
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    border-radius: 50%;
+  
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover,
+    &:focus {
+      fill: var(--hove-text-color);
+      cursor: pointer;}
+    }
+  
+  
+  .checkbox__submit {
+    width: 200px;
+    height: 50px;
+  
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.06em;
+    color: var(--main-cover_color);
+    background-color: var(--hove-text-color);
+    border: transparent;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .submit-modal:hover,
+  .submit-modal:focus {
+    cursor: pointer;
+    background-color: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
