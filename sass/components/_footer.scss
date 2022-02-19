@@ -1,0 +1,150 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--footer-main-color);
+}
+
+.footer-content {
+  display: flex;
+  align-items: baseline;
+}
+.address {
+  font-style: inherit;
+  margin-top: 20px;
+}
+.address__item {
+  margin-top: 9px;
+}
+
+.address__link {
+  display: block;
+
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--contact-footer_color);
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--main-cover_color);
+  }
+
+}
+/* Присойдиняйтесь */
+.join {
+  margin-left: 70px;
+}
+
+.join__title {
+  color: var(--main-cover_color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.join__list {
+  display: flex;
+  justify-content: center;
+}
+
+.join__item {
+  &+&{
+  margin-left: 10px;}
+}
+.join__link {
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--hove-text-color);
+  }
+
+}
+.join__icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--main-cover_color);
+}
+
+
+/* рассылка */
+.malling {
+  margin-left: 93px;
+}
+.malling__title{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-cover_color);
+  margin-bottom: 20px;
+}
+
+
+.malling__box {
+  display: flex;
+  justify-content: flex-end;
+}
+.malling__label{
+  display: flex;
+  margin-right: 12px;
+}
+
+.malling__input {
+  width: 358px;
+  height: 50px;
+
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.03em;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: var(--footer-main-color);
+  color: rgba(255, 255, 255, 0.6);
+  padding: 16px 15px 16px 15px;
+}
+
+.malling__submit {
+  width: 200px;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+
+  letter-spacing: 0.06em;
+  color: var(--main-cover_color);
+  background-color: var(--hove-text-color);
+  border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: transparent;
+}
+.malling__icon{
+  margin-left: 10px;
+}
+
+
+.malling__submit:hover,
+.malling__submit:focus {
+  cursor: pointer;
+  background-color: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
