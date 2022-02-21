@@ -3,8 +3,8 @@
     padding-bottom: 25px;
     border-bottom: 1px solid #ececec;
   }
- 
-  .menu {
+
+  .header__conteiner{
     display: flex;
     align-items: center;
   }
@@ -31,7 +31,7 @@
     color: var(--hove-text-color);} 
   }
   
-  .menu-list__current {
+  .menu-list__link--current {
     color: var(--hove-text-color);
     position: relative;
   
@@ -78,9 +78,9 @@
     margin-right: 10px;
     fill: var(--contact-text_color);
   
- 
+    .contacts-list__link:hover & ,
+    .contacts-list__link:focus &  {
+      fill: var(--hove-text-color);}
   }
 
-  .contacts-list__link:hover .contacts-list__icon ,
-  .contacts-list__link:focus .contacts-list__icon  {
-    fill: var(--hove-text-color);}
+ 
